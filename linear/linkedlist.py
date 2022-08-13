@@ -32,7 +32,18 @@ class SinglyLinkedList:
             yield cur.data
             cur = cur.next
 
-
+    def search(self, value):
+        '''
+        Search the given value in the list
+        :param value: searchable value
+        :return: boolean true or false
+        '''
+        cur = self.head
+        while cur != None and cur.data != value:
+            cur = cur.next
+        if cur is None:
+            return False
+        return True
 
 
 

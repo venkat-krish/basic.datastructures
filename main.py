@@ -21,4 +21,9 @@ if __name__ == '__main__':
     for elem in linked_list.traverse():
         print(elem)
 
+    print('Enter the value to search')
+    value = int(input())
+    # 2. Test case for search
+    print('The value %d is found %s' % (value, linked_list.search(value)))
+
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
