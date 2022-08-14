@@ -46,3 +46,13 @@ if __name__ == '__main__':
     print('\n Printing doubly linked list:')
     for elm in doubly_linkedlist.traverse():
         print(elm)
+
+    print('\n Printing doubly linked list in reverse order:')
+    for elm in doubly_linkedlist.reverse_traverse():
+        print(elm)
+
+    print(doubly_linkedlist.remove(34))
+
+    print('\n Printing doubly linked list:')
+    for elm in doubly_linkedlist.traverse():
+        print(elm)
